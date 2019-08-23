@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E280220B-7EDA-4274-B3D5-4E922D98CAAD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GameObjects</RootNamespace>
+    <AssemblyName>GameObjects</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="ScriptFrameworkLibrary">
+      <HintPath>..\CSharpLibs\engine\ScriptFrameworkLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AiCommand\IAiCommand.cs" />
+    <Compile Include="AiInfo\AiInfo.cs" />
+    <Compile Include="AiInfo\AiPathData.cs" />
+    <Compile Include="AiInfo\NpcAiInfo.cs" />
+    <Compile Include="AiInfo\UserAiInfo.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="AttrCalc\AttrCalculateUtility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttrCalc\DamageCalculator.cs" />
+    <Compile Include="AttrCalc\NpcAttrCalculator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttrCalc\UserAttrCalculator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CharacterBase.cs" />
+    <Compile Include="CombatInfo\CombatStatisticInfo.cs" />
+    <Compile Include="EquipmentStateInfo\EquipmentDataInfo.cs" />
+    <Compile Include="EquipmentStateInfo\EquipmentStateInfo.cs" />
+    <Compile Include="EquipmentStateInfo\ItemDataInfo.cs" />
+    <Compile Include="EquipmentStateInfo\LobbyItemBag.cs" />
+    <Compile Include="MovementInfo\MovementInfo.cs" />
+    <Compile Include="NpcManager.cs" />
+    <Compile Include="ObjectInfo\NpcInfo.cs" />
+    <Compile Include="ObjectInfo\UserInfo.cs" />
+    <Compile Include="SceneContextInfo.cs" />
+    <Compile Include="SceneLogicInfoManager.cs" />
+    <Compile Include="SceneLogicInfo\BlindageLogicInfo.cs" />
+    <Compile Include="SceneLogicInfo\PveMissionCheckLogicInfo.cs" />
+    <Compile Include="SceneLogicInfo\PveMissionFailedLogicInfo.cs" />
+    <Compile Include="SceneLogicInfo\PvpBarracksLogicInfo.cs" />
+    <Compile Include="SceneLogicInfo\ExplosiveObjectLogicInfo.cs" />
+    <Compile Include="SceneLogicInfo\IceHoleLogicInfo.cs" />
+    <Compile Include="SceneLogicInfo\PvpHeadquartersLogicInfo.cs" />
+    <Compile Include="SceneLogicInfo\RevivePointLogicInfo.cs" />
+    <Compile Include="SceneLogicInfo\Scene0\ShipDeckBossShowInfo.cs" />
+    <Compile Include="SceneLogicInfo\Scene0\ShipDeckFightInfo.cs" />
+    <Compile Include="SceneLogicInfo\SceneLogicInfo.cs" />
+    <Compile Include="SceneLogicInfo\SceneConnaturalInfo.cs" />
+    <Compile Include="SceneLogicInfo\SearchLightLogicInfo.cs" />
+    <Compile Include="SceneLogicInfo\SkillTriggerInfo.cs" />
+    <Compile Include="SceneLogicInfo\WormLair.cs" />
+    <Compile Include="SceneSharedData\BlackBoard.cs" />
+    <Compile Include="SceneSharedData\PvpData.cs" />
+    <Compile Include="SightManager.cs" />
+    <Compile Include="SkillStateInfo\BuffRefixProperty.cs" />
+    <Compile Include="WeaponStateInfo\WeaponStateInfo.cs" />
+    <Compile Include="WeaponStateInfo\WeaponInfo.cs" />
+    <Compile Include="SkillStateInfo\ImpactInfo.cs" />
+    <Compile Include="SkillStateInfo\SkillInfo.cs" />
+    <Compile Include="SkillStateInfo\SkillStateInfo.cs" />
+    <Compile Include="UserManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{288C0299-A184-4B54-9B13-783A0678B6CE}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,1 @@
+Id	UsagerId	WeaponId	MuzzlePos

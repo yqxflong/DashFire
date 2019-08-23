@@ -1,0 +1,13 @@
+Id	LogicDataFile	Description	TrueDescription	Icon	ActivateLevel	Passivity	SkillCoefficient	TargetType	TargetSelectType	CD	CostHp	CostEnergy	CostEnergyCore	CostItemId	RangeIndicatorType	SkillRangeAsset	SkillAssetStdRange	AOERangeAsset	AOEAssetStdRange	SkillRange	AOERange
+1	test.txt	∑≠πˆ	∑≠πˆ		0	0	0	3	4	1	0	0	0	0							
+2	test.txt	Ω£ ø¡—µÿ’∂	¡—µÿ’∂		1	0	0	2	2	2	0	0	0	0							
+3	test.txt	«π ÷∆’π•1			1	0	0	2	2	0.9	0	0	0	0						10	
+4	test.txt	Ω£ ø∆’π•1			1	0	0	2	2	1	0	0	0	0							
+5	test.txt	«π ÷ª«Ú			1	0	0	2	2	1	0	0	0	0						10	
+6	test.txt	Ω£ ø∆’π•2			1	0	0	2	2	1	0	0	0	0							
+7	test.txt	Ω£ ø¡´ª®’∂			1	0	0	2	2	1	0	0	0	0							
+8	test.txt	«π ÷¡¨∑¢…‰ª˜			1	0	0	2	2	1.5	0	0	0	0						10	
+9	test.txt	«π ÷∏°ø’…‰ª˜			1	0	0	2	2	1.5	0	0	0	0						10	
+10	test.txt	«π ÷÷’Ω·…‰ª˜			1	0	0	2	2	1	0	0	0	0						10	
+11	test.txt	Ω£ øÃ¯’∂			1	0	0	2	2	1	0	0	0	0							
+12	test.txt	«π ÷’ŸªΩ∏÷ΩÓ			1	0	0	2	2	1	0	0	0	0						15	

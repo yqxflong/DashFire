@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{288C0299-A184-4B54-9B13-783A0678B6CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DashFire</RootNamespace>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>http://localhost/Common/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="ScriptFrameworkLibrary">
+      <HintPath>..\CSharpLibs\engine\ScriptFrameworkLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataPool\DataTemplateMgr.cs" />
+    <Compile Include="DataPool\DBC.cs" />
+    <Compile Include="DataPool\DBCUtil.cs" />
+    <Compile Include="DataPool\FileReaderProxy.cs" />
+    <Compile Include="DataPool\IData.cs" />
+    <Compile Include="Data\ActionConfigProvider.cs" />
+    <Compile Include="Data\AttrConfigUtility.cs" />
+    <Compile Include="Data\BuffConfigProvider.cs" />
+    <Compile Include="Data\CriticalConfigProvider.cs" />
+    <Compile Include="Data\DataTypeDefines.cs" />
+    <Compile Include="Data\EquipmentConfigProvider.cs" />
+    <Compile Include="Data\FilePathDefine.cs" />
+    <Compile Include="Data\ItemConfigProvider.cs" />
+    <Compile Include="Data\MuzzlePosConfigProvider.cs" />
+    <Compile Include="Data\SceneConfigProvider.cs" />
+    <Compile Include="Data\GlobalVariables.cs" />
+    <Compile Include="Data\NpcConfigProvider.cs" />
+    <Compile Include="Data\PlayerConfigProvider.cs" />
+    <Compile Include="Data\SceneLogicConfig.cs" />
+    <Compile Include="Data\SceneLogicConfigProvider.cs" />
+    <Compile Include="Data\SkillConfig.cs" />
+    <Compile Include="Data\SkillConfigProvider.cs" />
+    <Compile Include="Data\SoundConfigProvider.cs" />
+    <Compile Include="Data\StrDictionary.cs" />
+    <Compile Include="Data\DynamicSceneConfigProvider.cs" />
+    <Compile Include="Entity\CharacterProperty.cs" />
+    <Compile Include="Entity\EntityDefines.cs" />
+    <Compile Include="Entity\TypedDataCollection.cs" />
+    <Compile Include="Fov\ILosBoard.cs" />
+    <Compile Include="Fov\FovMath.cs" />
+    <Compile Include="Fov\PermissiveFov.cs" />
+    <Compile Include="Fov\RadiusStrategy.cs" />
+    <Compile Include="Fov\ShadowFov.cs" />
+    <Compile Include="Fov\SpatialBoard.cs" />
+    <Compile Include="Geometry\Geometry3D.cs" />
+    <Compile Include="Geometry\KdObstacleTree.cs" />
+    <Compile Include="Geometry\KdTree.cs" />
+    <Compile Include="Geometry\PointKdTree.cs" />
+    <Compile Include="Geometry\QuadTree.cs" />
+    <Compile Include="Geometry\RvoAlgorithm.cs" />
+    <Compile Include="Log\DLog.cs" />
+    <Compile Include="Log\LogSystem.cs" />
+    <Compile Include="Data\SceneElements.cs" />
+    <Compile Include="Data\SceneElementsProvider.cs" />
+    <Compile Include="Geometry\Geometry.cs" />
+    <Compile Include="Message\MessageDefine.cs" />
+    <Compile Include="Mission\MissionManager.cs" />
+    <Compile Include="Spatial\ICellMapView.cs" />
+    <Compile Include="Spatial\ISpaceObject.cs" />
+    <Compile Include="Spatial\ISpatialSystem.cs" />
+    <Compile Include="Spatial\RetCode.cs" />
+    <Compile Include="Spatial\Shape.cs" />
+    <Compile Include="Util\AsyncActionProcessor.cs" />
+    <Compile Include="Util\DelayActionProcessor.cs" />
+    <Compile Include="Util\Heap.cs" />
+    <Compile Include="Util\IActionQueue.cs" />
+    <Compile Include="Util\LinkedListDictionary.cs" />
+    <Compile Include="Util\MyActionAndFunc.cs" />
+    <Compile Include="Util\MyDictionary.cs" />
+    <Compile Include="Util\MyTaskDispatcher.cs" />
+    <Compile Include="Util\MyThread.cs" />
+    <Compile Include="Util\ObjectPool.cs" />
+    <Compile Include="Util\TimeUtility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\Converter.cs" />
+    <Compile Include="Util\Helper.cs" />
+    <Compile Include="Util\HomePath.cs" />
+    <Compile Include="Util\KernelUtil.cs" />
+    <Compile Include="Defines.cs" />
+    <Compile Include="Data\WeaponConfig.cs" />
+    <Compile Include="Data\WeaponConfigProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

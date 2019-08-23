@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20F87D18-86C6-4C29-8BA6-BBD96F50D4B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DashFire</RootNamespace>
+    <AssemblyName>Client</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="Execute" command="../WebJetLoader/Dash.exe" />
+      </CustomCommands>
+    </CustomCommands>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\..\Public\CSharpLibs\3rd_party\Lidgren.Network\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>..\..\Public\CSharpLibs\3rd_party\json\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\Public\CSharpLibs\3rd_party\protobuf\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtobufSerializer">
+      <HintPath>..\..\Public\ClientProtoBuf\bin\ProtobufSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="SocketIO">
+      <HintPath>..\..\Public\CSharpLibs\3rd_party\websocket\SocketIO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="ScriptFrameworkLibrary">
+      <HintPath>..\..\Public\CSharpLibs\engine\ScriptFrameworkLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="WebSocket4Net">
+      <HintPath>..\..\Public\CSharpLibs\3rd_party\websocket\WebSocket4Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Public\Common\Message\ProtoNetSerialize.cs">
+      <Link>NetWork\ProtoNetSerialize.cs</Link>
+    </Compile>
+    <Compile Include="Ai\AiViewManager.cs" />
+    <Compile Include="AutoAdjust\Controller\FaceController.cs" />
+    <Compile Include="AutoAdjust\Controller\MoveController.cs" />
+    <Compile Include="AutoAdjust\Controller\PositionController.cs" />
+    <Compile Include="Kernel\GameLogicNotification.cs" />
+    <Compile Include="LobbyNetwork\JsonMessageDefine.cs" />
+    <Compile Include="LobbyNetwork\JsonMessageDispatcher.cs" />
+    <Compile Include="LobbyNetwork\LobbyNetworkSystem.cs" />
+    <Compile Include="Entity\EntityManager.cs" />
+    <Compile Include="Entity\GameObjectIdManager.cs" />
+    <Compile Include="Entity\Object\CharacterView_Anim.cs" />
+    <Compile Include="Entity\Object\NpcView.cs" />
+    <Compile Include="Entity\Object\CharacterView.cs" />
+    <Compile Include="Entity\Object\SpaceInfoView.cs" />
+    <Compile Include="Entity\Object\UserView.cs" />
+    <Compile Include="ClientConfig.cs" />
+    <Compile Include="Input\PlayerControl.cs" />
+    <Compile Include="Kernel\GameControler.cs" />
+    <Compile Include="Kernel\GameLogicThread.cs" />
+    <Compile Include="NetWork\NetWorkSystem.cs" />
+    <Compile Include="AutoAdjust\ControlSystemOperation.cs" />
+    <Compile Include="AutoAdjust\IController.cs" />
+    <Compile Include="AutoAdjust\ControlSystem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="World\SceneResource.cs" />
+    <Compile Include="World\WorldSystem.cs" />
+    <Compile Include="NetWork\MessageDispatch.cs" />
+    <Compile Include="NetWork\MsgHandler.cs" />
+    <Compile Include="Entity\OperationCmdMgr.cs" />
+    <Compile Include="Entity\SpecialBoss_AI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Skill\ImpactView\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Public\AiSystem\AiSystem.csproj">
+      <Project>{8DC8AD58-3569-4B5C-8BA4-CD8B529183E7}</Project>
+      <Name>AiSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public\ClientProtoBuf\ClientProtoBuf.csproj">
+      <Project>{C402FC70-3A7A-4CE2-956F-6AA1DFD5882E}</Project>
+      <Name>ClientProtoBuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public\Common\Common.csproj">
+      <Project>{288C0299-A184-4B54-9B13-783A0678B6CE}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public\GameObjects\GameObjects.csproj">
+      <Project>{E280220B-7EDA-4274-B3D5-4E922D98CAAD}</Project>
+      <Name>GameObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public\GfxLogicBridge\GfxLogicBridge.csproj">
+      <Project>{145EED2B-D9C7-40D3-B0E4-4CC5B41BEFDC}</Project>
+      <Name>GfxLogicBridge</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public\ImpactSystem\ImpactSystem.csproj">
+      <Project>{BDB1B8F1-DA39-4A15-8054-EAC15D15C12F}</Project>
+      <Name>ImpactSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public\SpatialSystem\SpatialSystem.csproj">
+      <Project>{A7243F97-5FC1-4327-81CC-C76C94721D7A}</Project>
+      <Name>SpatialSystem</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

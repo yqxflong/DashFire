@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8DC8AD58-3569-4B5C-8BA4-CD8B529183E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AiSystem</RootNamespace>
+    <AssemblyName>AiSystem</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ScriptFrameworkLibrary">
+      <HintPath>..\CSharpLibs\engine\ScriptFrameworkLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractAiCommand.cs" />
+    <Compile Include="AiCommandDispatcher.cs" />
+    <Compile Include="AiCommands\NpcAiCommand.cs" />
+    <Compile Include="AiCommands\UserAiCommand.cs" />
+    <Compile Include="AiLogicManager.cs" />
+    <Compile Include="AiLogics\AiLogicUtility.cs" />
+    <Compile Include="AiLogics\AiLogic_Demo_Boss.cs" />
+    <Compile Include="AiLogics\AiLogic_Demo_Melee.cs" />
+    <Compile Include="AiLogics\AiLogic_Demo_Ranged.cs" />
+    <Compile Include="AiLogics\AiLogic_PveNpc_General.cs" />
+    <Compile Include="AiLogics\AiLogic_PveNpc_Monster.cs" />
+    <Compile Include="AiLogics\AiLogic_PveNpc_Monster_CloseCombat.cs" />
+    <Compile Include="AiLogics\AiLogic_PveNpc_Trap.cs" />
+    <Compile Include="AiLogics\AiLogic_PvpNpc_General.cs" />
+    <Compile Include="AiLogics\AiLogic_PvpNpc_Tower.cs" />
+    <Compile Include="AiLogics\AiLogic_UserSelf_General.cs" />
+    <Compile Include="AiLogics\AiLogic_PveNpc_OneSkill.cs" />
+    <Compile Include="AiLogics\AiLogic_PveGun_Fixed.cs" />
+    <Compile Include="AiLogics\AiLogic_UserSelfRange_General.cs" />
+    <Compile Include="AiSystem.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="IAiLogic.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{288C0299-A184-4B54-9B13-783A0678B6CE}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameObjects\GameObjects.csproj">
+      <Project>{E280220B-7EDA-4274-B3D5-4E922D98CAAD}</Project>
+      <Name>GameObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SpatialSystem\SpatialSystem.csproj">
+      <Project>{A7243F97-5FC1-4327-81CC-C76C94721D7A}</Project>
+      <Name>SpatialSystem</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

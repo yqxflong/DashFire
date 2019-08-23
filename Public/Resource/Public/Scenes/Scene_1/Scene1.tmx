@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="150" height="150" tilewidth="32" tileheight="32">
+ <imagelayer name="Scene0" width="150" height="150">
+  <image source="Scene1.jpg"/>
+ </imagelayer>
+ <objectgroup name="walkarea" width="150" height="150"/>
+ <objectgroup name="roadblock" width="150" height="150"/>
+ <objectgroup name="energywall" width="150" height="150"/>
+ <objectgroup name="blinding" width="150" height="150"/>
+ <objectgroup name="underfloor2" width="150" height="150"/>
+ <objectgroup name="underfloor1" width="150" height="150"/>
+ <objectgroup name="floor1" width="150" height="150"/>
+ <objectgroup name="floor2" width="150" height="150"/>
+ <objectgroup name="floor3" width="150" height="150"/>
+ <objectgroup name="floor4" width="150" height="150"/>
+ <objectgroup name="blindage" width="150" height="150"/>
+</map>

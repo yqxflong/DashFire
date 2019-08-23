@@ -1,0 +1,25 @@
+Id	LogicId	Description	BreakLevel	CallbackSection	CallbackPoint	EffectNum	EffectTime0	SkeletonNodeName0	EffectName0	EffectTime1	SkeletonNodeName1	EffectName1	EffectTime2	SkeletonNodeName2	EffectName2	EffectTime3	SkeletonNodeName3	EffectName3	SectionNum	ActionType0	WapMode0	IsUpperBody0	PlaySpeed0	PlayTime0	MoveSpeed0	MoveTowards0	ActionType1	WapMode1	IsUpperBody1	PlaySpeed1	PlayTime1	MoveSpeed1	MoveTowards1	ActionType2	WapMode2	IsUpperBody2	PlaySpeed2	PlayTime2	MoveSpeed2	MoveTowards2	ActionType3	WapMode3	IsUpperBody3	PlaySpeed3	PlayTime3	MoveSpeed3	MoveTowards3	ActionType4	WapMode4	IsUpperBody4	PlaySpeed4	PlayTime4	MoveSpeed4	MoveTowards4	ParamNum	ParamDesc0	Param0	ParamDesc1	Param1	ParamDesc2	Param2	ParamDesc3	Param3
+#技能动作																																																															
+1001	20001	剑士翻滚	0	0	0														1	101	ONCE	FALSE	1	2.1																																							
+1002	20001	剑士裂地斩	0	1	0.9														1	105	CLAMP	FALSE	1	1.5																																							
+1003	20001	枪手普攻1	0	1	0.2														1	102	LOOP	FALSE	1	0.9																																							
+1004	20001	剑士普攻1	0	1	2	1	0.01	ef_weapon01	asset:Effect/Character_FX/Hero/JianShi/DaoGuang_01/6_Hero_JianShi_DaoGuang_01.template										1	103	CLAMP	FALSE	1	1																																							
+1005	20001	枪手大火球	0	1	0.5														1	103	CLAMP	FALSE	1	0.9																																							
+1006	20001	剑士普攻2	0	1	2	1	0.01	ef_weapon01	asset:Effect/Character_FX/Hero/JianShi/DaoGuang_02/6_Hero_JianShi_DaoGuang_02.template										1	104	CLAMP	FALSE	1	1																																							
+1007	20001	剑士莲花斩	0	1	2	4	0.2		asset:Effect/Character_FX/Hero/JianShi/JianQi_01/6_Hero_JianShi_JianQi_01.template	0.25		asset:Effect/Character_FX/Hero/JianShi/DiLie_01/6_Hero_JianShi_DiLie_01.template	0.6		asset:Effect/Character_FX/Hero/JianShi/YingHua_02/6_Hero_JianShi_YingHua_02.template	0.2	ef_weapon01	asset:Effect/Character_FX/Hero/JianShi/DaoGuang_03/6_Hero_JianShi_DaoGuang_03.template	1	105	CLAMP	FALSE	1.5	1.5																																							
+1008	20001	枪手连续射击	0	1	0.2														1	104	LOOP	FALSE	1	1.5																																							
+1009	20001	枪手普攻2	0	1	0.1														1	102	LOOP	FALSE	1	1.5																																							
+1010	20001	枪手普攻3	0	1	0.2														1	102	LOOP	FALSE	1	1																																							
+#普攻动作																																																															
+2001	20001	类型1-近程单击分段伤害	0	0	0														1	5	ONCE	FALSE	1	1.2			12	ONCE	FALSE	1	0.2	30	0	5	ONCE	FALSE	1	0.8																									
+2002	20002	类型2-远程位移AOE伤害	0	3	0.3														3	12	ONCE	FALSE	1	0.2																																							
+#npc普攻动作																											5	ONCE	TRUE	1	0.25																																
+30002	30002	npc射击动作	0	0	0														1	5	ONCE	FALSE	1	0.8																																							
+4001	20001	死亡动作	0	1	0														1	15	CLAMP	FALSE	1	3																															2	垂直加速度	-20	击高	1				
+#效果动作																																																															
+5001	20005	击退	0	1	0	1	0												2	8	CLAMP	FALSE	0.5	0.2	1	180	101	LOOP	FALSE	1	0.1																																
+5002	20005	击高	0	1	0	1	0		asset:Effect/Character_FX/Monster/TongYong/6_Normal_Hurt_01.template										3	8	CLAMP	FALSE	0.5	1.2			102	CLAMP	FALSE	1	0.4			103	CLAMP	FALSE	1	0.4																	2	垂直加速度	-20	击高	0				
+5003	20005	剑士普攻1段受击	0	1	0	2	0		asset:Effect/Character_FX/Monster/TongYong/6_Normal_Hurt_01.template	0		asset:Effect/Character_FX/Hero/JianShi/QieGe_01/6_Hero_JianShi_QieGe_01.template							3	101	LOOP	FALSE	1	0.1			8	CLAMP	FALSE	0.5	0.3	1	180	101	LOOP	FALSE	1	0.1																									
+5004	20005	剑士普攻2段受击	0	1	0	2	0		asset:Effect/Character_FX/Monster/TongYong/6_Normal_Hurt_01.template	0.2		asset:Effect/Character_FX/Hero/JianShi/ShouJi_02/6_Hero_JianShi_ShouJi_02.template							3	101	LOOP	FALSE	1	0.1			8	CLAMP	FALSE	0.5	0.3	1	180	101	LOOP	FALSE	1	0.1																									
+5005	20005	枪手普攻2击高	0	1	0	0	0												3	8	CLAMP	FALSE	0.5	1.2			102	CLAMP	FALSE	1	0.4			103	CLAMP	FALSE	1	0.4																	2	垂直加速度	-6	击高	0				
+6001	20005	剑士裂地斩被击效果	0	1	0	2	0		asset:Effect/Character_FX/Monster/TongYong/6_Normal_Hurt_01.template	0.2		asset:Effect/Character_FX/Hero/JianShi/ShouJi_02/6_Hero_JianShi_ShouJi_02.template							3	101	LOOP	FALSE	1	0.1			8	CLAMP	FALSE	0.5	0.3			101	LOOP	FALSE	1	0.1																									

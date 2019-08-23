@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using ScriptRuntime;
+
+namespace DashFire
+{
+  public class RevivePointLogicInfo
+  {
+    public Vector3 m_Center;
+    public float m_RadiusOfTrigger = 0;
+  }
+}

@@ -1,0 +1,9 @@
+D:\TestWebSocket\Client\SuperSocket.ClientEngine(0.2).Source\Protocol\bin\Debug\SuperSocket.ClientEngine.Protocol.dll
+D:\TestWebSocket\Client\SuperSocket.ClientEngine(0.2).Source\Protocol\bin\Debug\SuperSocket.ClientEngine.Protocol.pdb
+D:\TestWebSocket\Client\SuperSocket.ClientEngine(0.2).Source\Protocol\bin\Debug\SuperSocket.ClientEngine.Common.dll
+D:\TestWebSocket\Client\SuperSocket.ClientEngine(0.2).Source\Protocol\bin\Debug\SuperSocket.ClientEngine.Core.dll
+D:\TestWebSocket\Client\SuperSocket.ClientEngine(0.2).Source\Protocol\bin\Debug\SuperSocket.ClientEngine.Common.pdb
+D:\TestWebSocket\Client\SuperSocket.ClientEngine(0.2).Source\Protocol\bin\Debug\SuperSocket.ClientEngine.Core.pdb
+D:\TestWebSocket\Client\SuperSocket.ClientEngine(0.2).Source\Protocol\obj\Debug\ResolveAssemblyReference.cache
+D:\TestWebSocket\Client\SuperSocket.ClientEngine(0.2).Source\Protocol\obj\Debug\SuperSocket.ClientEngine.Protocol.dll
+D:\TestWebSocket\Client\SuperSocket.ClientEngine(0.2).Source\Protocol\obj\Debug\SuperSocket.ClientEngine.Protocol.pdb

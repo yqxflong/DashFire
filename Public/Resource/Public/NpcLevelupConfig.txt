@@ -1,0 +1,1 @@
+Id	Description	AddHpMax	AddNpMax	AddEpMax	AddCrgMax	AddAd	AddDp	AddRps	AddCrg	AddCht	AddRange	AddDps	AddDamRange	AddCri	AddPow	AddAndp	AddHpRecover	AddNpRecover	AddEpRecover	AddAp	AddTay	AddSpd

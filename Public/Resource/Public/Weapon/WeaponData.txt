@@ -1,0 +1,12 @@
+Id	Name	ResourceName	WeaponType	EquipmentId
+#½£Ê¿ÎäÆ÷				
+1	½£Ê¿ÎäÆ÷1	Hero/1_JianShi_w_01|ef_righthand	1	
+2	½£Ê¿ÎäÆ÷2	Hero/1_JianShi_w_02|ef_lefthand	1	
+#Ç¹ÊÖÎäÆ÷				
+3	Ç¹ÊÖÎäÆ÷1	Hero/1_QiangShou_w_01|ef_righthand	1	
+#¹ÖÎïÎäÆ÷				
+10001	ÀÏÊóÎäÆ÷	Monster/Demo01/1_ShuRen/Monster_ShuRen_w	1	
+10002	ĞÜĞÜÎäÆ÷	Monster/Demo01/2_XiongRen/Monster_XiongRen_w	1	
+10003	²¼Â³·òÎäÆ÷	Monster/Demo01/01_Bluelf/5_Mon_Bluelf_01_w_01|ef_righthand	1	
+10004	²¼Â³·òÎäÆ÷	Monster/Demo01/01_Bluelf/5_Mon_Bluelf_02_w_02|ef_righthand	1	
+10005	²¼Â³·òbossÎäÆ÷	Monster/Demo01/01_Bluelf/5_Mon_Bluelf_03_w_01|ef_righthand	1	

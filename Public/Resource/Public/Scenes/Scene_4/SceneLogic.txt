@@ -1,0 +1,17 @@
+Id	Description	LogicId	ParamNum	ParamName0	Param0	ParamName1	Param1	ParamName2	Param2	ParamName3	Param3	ParamName4	Param4	ParamName5	Param5	ParamName6	Param6	ParamName7	Param7	ParamName8	Param8	ParamName9	Param9	ParamName10	Param10	ParamName11	Param11	ParamName12	Param12	ParamName13	Param13	ParamName14	Param14	ParamName15	Param15
+50	pve关卡胜负判定	13007	1	BOSS	30060																														
+51	复活点	13001	2	区域中心	169 0 626	触发半径	10																												
+52	复活点	13001	2	区域中心	170 0 595	触发半径	10																												
+53	复活点	13001	2	区域中心	235 0 598	触发半径	10																												
+54	复活点	13001	2	区域中心	278 0 597	触发半径	10																												
+57	复活点	13001	2	区域中心	286 0 501	触发半径	10																												
+58	复活点	13001	2	区域中心	219 0 451	触发半径	10																												
+59	复活点	13001	2	区域中心	185 0 416	触发半径	10																												
+60	复活点	13001	2	区域中心	204 0 353	触发半径	10																												
+61	复活点	13001	2	区域中心	241 0 311	触发半径	10																												
+62	复活点	13001	2	区域中心	276 0 255	触发半径	10																												
+63	复活点	13001	2	区域中心	332 0 219	触发半径	10																												
+64	复活点	13001	2	区域中心	388 0 209	触发半径	10																												
+65	复活点	13001	2	区域中心	410 0 174	触发半径	10																												
+66	复活点	13001	2	区域中心	419 0 119	触发半径	10																												
+67	复活点	13001	2	区域中心	451 0 385	触发半径	10																												
